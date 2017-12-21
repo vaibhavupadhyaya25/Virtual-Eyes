@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    tools:context="io.github.vaibhav.virtualeyes.DescribeActivity">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<include-->
+            <!--android:id="@+id/toolbar"-->
+            <!--layout="@layout/toolbar" />-->
+    <!--</RelativeLayout>-->
+
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:background="@color/descbar"
+          android:layout_width="match_parent"
+          android:layout_height="60dp">
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_marginTop="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:padding="5dp"
+              android:text="SELECT AN IMAGE TO ANALYSE"
+              android:textColor="#ffffff"
+              android:textSize="20dp" />
+      </LinearLayout>
+        <LinearLayout
+            android:background="@color/logo"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/selectedImage"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_toRightOf="@+id/image_control"
+                android:layout_toEndOf="@+id/image_control"
+                android:background="#E0E0E0" />
+
+            <Button
+                android:background="@drawable/mybttn2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:textColor="#3a3c3c"
+                android:id="@+id/buttonSelectImage"
+                android:onClick="selectImage"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/editTextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#1c1d1d"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+

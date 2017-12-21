@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.vaibhav.virtualeyes.QuickLinks">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout2">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:orientation="vertical"
+        android:background="@color/logo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home"
+            android:id="@+id/textView"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quick Links "
+            android:textColor="#4ed8cc"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lineargrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/callbttn"
+                android:layout_margin="20dp"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:background="@drawable/rect"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="Call"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/flashbttn"
+                android:layout_margin="20dp"
+
+
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:background="@drawable/rect"
+                android:drawableTop="@drawable/ic_lightbulb_outline_black_24dp"
+                android:text="Flashlight"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/camerabttn"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/rect"
+                android:drawableTop="@drawable/ic_camera_alt_black_24dp"
+                android:text="Camera"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <ToggleButton
+                android:id="@+id/wifibttn"
+                android:layout_margin="20dp"
+
+
+
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:background="@drawable/rect"
+                android:drawableTop="@drawable/ic_wifi_black_24dp"
+                android:text="Wifi"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

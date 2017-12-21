@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Virtual Eyes</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+
+    <string name="MainInst">Double Tap to Enter the Low Vision mode</string>
+
+    <string name="WelcInst"> Hey there! Welcome to virtual eyes. This application will enable you to execute all your necessary tasks at one go.</string>
+    <string name="WelcInst2">Click anywhere to proceed!</string>
+    <string name="blind">Hello! Lets take a quick tour of virtual eyes. Feel your device and judge the corners of the screen. Tap at any corner to hear the feature implemented. Single tap will voice the function and long press on it will select it. Double tap to enter low vision mode.</string>
+
+
+    <string name="subscription_key">f4f8bcf071d4407f834f60494216d440</string>
+    <string name="add_subscription_key_tip_title">Subscription Key is Needed</string>
+    <string name="add_subscription_key_tip">Please put your subscription key to source file \"app/res/values/strings.xml\" to enable Vision API calls.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/primary"
+    tools:context="io.github.vaibhav.virtualeyes.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/logo">
+
+            <ImageView
+                android:id="@+id/loginImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+
+
+                app:srcCompat="@drawable/login" />
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/input_email"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:textColor="#fff"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:hint="Username"
+                android:textColorHint="@color/hint"
+                android:background="@color/logo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/input_password"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:textColor="#fff"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hint"
+                android:background="@color/logo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_marginTop="25dp"
+                android:layout_width="260dp"
+                android:text="LOGIN"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView android:id="@+id/link_signup"
+                android:layout_marginTop="90dp"
+                android:textColor="#26b691"
+                android:text="Create a new Account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="20dip"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    
+
+
+
+
+
+</RelativeLayout>
